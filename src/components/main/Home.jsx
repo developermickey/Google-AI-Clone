@@ -62,13 +62,13 @@ const Home = () => {
                   className={message.role === "user" ? "user-box" : "ai-box"}
                 >
                   <h3>{message.role === "user" ? "You" : "AI"}</h3>
-                  <div dangerouslySetInnerHTML={{ __html: message.content }} /> {/* Use dangerouslySetInnerHTML */}
+                  <div dangerouslySetInnerHTML={{ __html: message.content }} />
                 </div>
               ))}
               {isLoading && (
                 <div className="ai-box">
                   <h3>AI Bot</h3>
-                  <p>Thinking...</p>
+                  <p>Loading...</p>
                 </div>
               )}
             </div>
